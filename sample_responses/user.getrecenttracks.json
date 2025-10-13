@@ -1,0 +1,85 @@
+{
+  "recenttracks": {
+    "track": [
+      {
+        "artist": {
+          "mbid": "2b3e25ba-983e-44ac-9def-907e03910cd2",
+          "#text": "Skee Mask"
+        },
+        "streamable": "0",
+        "image": [
+          {
+            "size": "small",
+            "#text": "https:\/\/lastfm.freetls.fastly.net\/i\/u\/34s\/1836f0edf47a30d8ebb9a16031bde409.jpg"
+          },
+          {
+            "size": "medium",
+            "#text": "https:\/\/lastfm.freetls.fastly.net\/i\/u\/64s\/1836f0edf47a30d8ebb9a16031bde409.jpg"
+          },
+          {
+            "size": "large",
+            "#text": "https:\/\/lastfm.freetls.fastly.net\/i\/u\/174s\/1836f0edf47a30d8ebb9a16031bde409.jpg"
+          },
+          {
+            "size": "extralarge",
+            "#text": "https:\/\/lastfm.freetls.fastly.net\/i\/u\/300x300\/1836f0edf47a30d8ebb9a16031bde409.jpg"
+          }
+        ],
+        "mbid": "113d686e-fd76-45a5-b094-a6608afc1c93",
+        "album": {
+          "mbid": "",
+          "#text": "ITLP19 - Resort"
+        },
+        "name": "Vitamin 313",
+        "url": "https:\/\/www.last.fm\/music\/Skee+Mask\/_\/Vitamin+313",
+        "date": {
+          "uts": "1760385921",
+          "#text": "13 Oct 2025, 20:05"
+        }
+      },
+      {
+        "artist": {
+          "mbid": "2b3e25ba-983e-44ac-9def-907e03910cd2",
+          "#text": "Skee Mask"
+        },
+        "streamable": "0",
+        "image": [
+          {
+            "size": "small",
+            "#text": "https:\/\/lastfm.freetls.fastly.net\/i\/u\/34s\/1836f0edf47a30d8ebb9a16031bde409.jpg"
+          },
+          {
+            "size": "medium",
+            "#text": "https:\/\/lastfm.freetls.fastly.net\/i\/u\/64s\/1836f0edf47a30d8ebb9a16031bde409.jpg"
+          },
+          {
+            "size": "large",
+            "#text": "https:\/\/lastfm.freetls.fastly.net\/i\/u\/174s\/1836f0edf47a30d8ebb9a16031bde409.jpg"
+          },
+          {
+            "size": "extralarge",
+            "#text": "https:\/\/lastfm.freetls.fastly.net\/i\/u\/300x300\/1836f0edf47a30d8ebb9a16031bde409.jpg"
+          }
+        ],
+        "mbid": "9368f239-9d46-4b0e-85f5-2c2e9ec55237",
+        "album": {
+          "mbid": "",
+          "#text": "ITLP19 - Resort"
+        },
+        "name": "7AM at the Rodeo",
+        "url": "https:\/\/www.last.fm\/music\/Skee+Mask\/_\/7AM+at+the+Rodeo",
+        "date": {
+          "uts": "1760385605",
+          "#text": "13 Oct 2025, 20:00"
+        }
+      }
+    ],
+    "@attr": {
+      "user": "Proxyamg",
+      "totalPages": "123457",
+      "page": "1",
+      "perPage": "2",
+      "total": "246913"
+    }
+  }
+}
