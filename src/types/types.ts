@@ -1,4 +1,4 @@
-export interface Track {
+interface Track {
     mbid?: string
     artist?: string
     imageUrl?: string
@@ -7,3 +7,5 @@ export interface Track {
     url?: string
     date?: string
 }
+
+export type { Track };

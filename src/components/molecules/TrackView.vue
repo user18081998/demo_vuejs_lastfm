@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import {Track} from "@/types/types";
+import type {Track} from "@/types/types";
 
 defineProps<{
   track: Track
