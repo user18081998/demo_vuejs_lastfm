@@ -2,8 +2,8 @@
 import {fromTrackNode} from "@/business/integrations/lastfm/converters";
 import type {Track} from "@/types/types";
 
-const rootUrl = import.meta.env.VITE_API_ROOT;
-const apiKey = import.meta.env.VITE_API_KEY;
+const rootUrl = import.meta.env.VITE_API_LASTFM_ROOT;
+const apiKey = import.meta.env.VITE_API_LASTFM_KEY;
 
 const limit=10;
 
