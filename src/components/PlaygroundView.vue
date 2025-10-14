@@ -1,24 +1,25 @@
 <script setup lang="ts">
 import LastFmScrobbles from './organisms/LastFmScrobbles.vue';
+import LastFmHeading from "@/components/organisms/LastFmHeading.vue";
+import { ref } from 'vue'
+
+const username=ref<string>('proxyamg');
+
+function setUsername(newUsername: string) :void {
+  username.value = newUsername;
+}
+
 </script>
 
 <template>
-
-<!--  <UApp>-->
-<!--      <UContainer>-->
-<!--        <Placeholder class="h-32"> <UButton label="Button" /> </Placeholder>-->
-
-<!--        <Placeholder class="h-32">-->
-<!--          <LastFmScrobbles/>-->
-<!--        </Placeholder>-->
-<!--      </UContainer>-->
-<!--  </UApp>-->
-
+    <LastFmHeading @submit="setUsername"/>
     <UContainer class="flex gap-4 min-h-screen py-4">
       <!-- Left Sidebar -->
       <aside class="w-1/3">
         <UCard>
-          <LastFmScrobbles/>
+          <LastFmScrobbles
+            :username="username"
+          />
         </UCard>
       </aside>
 
