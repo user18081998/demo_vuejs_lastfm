@@ -1,4 +1,4 @@
-import {Track} from "@/types/types";
+import type {Track} from "@/types/types";
 import {JSONPath} from "jsonpath-plus";
 
 const paths: Record<keyof Track, string> = {

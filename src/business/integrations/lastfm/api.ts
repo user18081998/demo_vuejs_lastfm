@@ -1,6 +1,6 @@
 //  JSON: /2.0/?method=user.getrecenttracks&user=rj&api_key=YOUR_API_KEY&format=json
 import {fromTrackNode} from "@/business/integrations/lastfm/converters";
-import {Track} from "@/types/types";
+import type {Track} from "@/types/types";
 
 const rootUrl = import.meta.env.VITE_API_ROOT;
 const apiKey = import.meta.env.VITE_API_KEY;
