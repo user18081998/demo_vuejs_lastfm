@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import {onMounted, reactive, ref} from "vue";
-import type {Track} from "@/types/types";
-import {fetchLastTracks} from "@/business/integrations/lastfm/api";
+import type {Track} from "@/types/types.ts";
+import {fetchLastTracks} from "@/business/integrations/lastfm/api.ts";
 import TracksView from "@/components/molecules/TracksView.vue";
 
 defineProps({
@@ -20,9 +20,10 @@ onMounted(() => {
 </script>
 
 <template>
-  <div v-if="fetchOk">
-    <TracksView :tracks="scrobbles" />
-  </div>
+    <div class="table-header-group">Recent scrobbles</div>
+    <div v-if="fetchOk">
+      <TracksView :tracks="scrobbles" />
+    </div>
 </template>
 
 <style scoped>

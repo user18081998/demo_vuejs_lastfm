@@ -1,11 +1,16 @@
 <script lang="ts" setup>
-import LandingPage from "@/components/LandingPage.vue";
+import PlaygroundView from "@/components/PlaygroundView.vue";
 </script>
 
+<!--<template>-->
+<!--  <main>-->
+<!--    <LandingPage/>-->
+<!--  </main>-->
+<!--</template>-->
 <template>
-  <main>
-    <LandingPage/>
-  </main>
+  <UApp>
+    <PlaygroundView/>
+  </UApp>
 </template>
 
 <style scoped>

@@ -9,9 +9,11 @@ defineProps<{
 </script>
 
 <template>
-  <TrackView v-for="scrobble in tracks" :key="scrobble.mbid" class="scrobble"
-             :track="scrobble"
-  />
+  <ul class="space-y-1.5, space-x-0">
+    <TrackView v-for="scrobble in tracks" :key="scrobble.mbid" class="scrobble"
+               :track="scrobble"
+    />
+  </ul>
 </template>
 
 <style scoped>
