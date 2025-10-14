@@ -1,12 +1,9 @@
-<script setup>
-import {Track} from "@/types/classes.js";
+<script lang="ts" setup>
+import {Track} from "@/types/types";
 
-defineProps({
-  track:{
-    type: Track,
-    required: true
-  }
-})
+defineProps<{
+  track: Track
+}>()
 </script>
 
 <template>
