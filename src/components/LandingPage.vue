@@ -3,6 +3,8 @@ import {onMounted, reactive, ref} from "vue";
 import {Track} from "@/types/types";
 import TrackView from "@/components/molecules/TrackView.vue";
 import {fetchLastTracks} from "@/business/integrations/lastfm/api";
+import TracksView from "@/components/molecules/TracksView.vue";
+import TracksVueStellar from "@/components/molecules/TracksVueStellar.vue";
 
 defineProps({
   username: String
@@ -22,9 +24,8 @@ onMounted(() => {
 
 <template>
   <div v-if="fetchOk">
-    <TrackView v-for="scrobble in scrobbles" :key="scrobble.mbid" class="scrobble"
-      :track="scrobble"
-    />
+<!--    <TracksView :tracks="scrobbles" />-->
+    <TracksVueStellar :tracks="scrobbles" />
   </div>
 </template>
 
