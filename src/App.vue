@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import LandingPage from "@/components/LandingPage.vue";
+import PlaygroundView from "@/components/PlaygroundView.vue";
 </script>
 
 <!--<template>-->
@@ -9,7 +9,7 @@ import LandingPage from "@/components/LandingPage.vue";
 <!--</template>-->
 <template>
   <UApp>
-    <RouterView />
+    <PlaygroundView/>
   </UApp>
 </template>
 
