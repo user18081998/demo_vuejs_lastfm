@@ -2,10 +2,15 @@
 import LandingPage from "@/components/LandingPage.vue";
 </script>
 
+<!--<template>-->
+<!--  <main>-->
+<!--    <LandingPage/>-->
+<!--  </main>-->
+<!--</template>-->
 <template>
-  <main>
-    <LandingPage/>
-  </main>
+  <UApp>
+    <RouterView />
+  </UApp>
 </template>
 
 <style scoped>

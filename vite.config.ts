@@ -1,4 +1,5 @@
 import { fileURLToPath, URL } from 'node:url'
+import ui from '@nuxt/ui/vite'
 
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -9,6 +10,7 @@ export default defineConfig({
   plugins: [
     vue(),
     vueDevTools(),
+    ui()
   ],
   resolve: {
     alias: {

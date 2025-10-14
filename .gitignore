@@ -21,6 +21,7 @@ coverage
 .vscode/*
 !.vscode/extensions.json
 .idea
+.__idea
 *.suo
 *.ntvs*
 *.njsproj
@@ -29,4 +30,9 @@ coverage
 
 *.tsbuildinfo
 
+# NO MORE PUSHING KEYS PLEASE
 .env.*
+
+# Auto-generated type declarations
+auto-imports.d.ts
+components.d.ts
