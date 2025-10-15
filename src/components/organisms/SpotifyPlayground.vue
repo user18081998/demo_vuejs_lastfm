@@ -23,7 +23,7 @@
           <a :href="store.urlToAuth??'#'" >Login Spotify</a>
         </UButton>
         <UContainer v-else>
-          <Placeholder class="h-32" />
+<!--          <Placeholder class="h-32" />-->
           <div>
             Welcome {{store.user?.display_name ?? "somebody" }}
           </div>
