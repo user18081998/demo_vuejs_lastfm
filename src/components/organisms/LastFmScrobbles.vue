@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import {onMounted, reactive, ref, watch} from "vue";
-import type {Track} from "@/types/types.ts";
+import type {Track} from "@/models/types.ts";
 import {fetchLastTracks} from "@/business/integrations/lastfm/api.ts";
 import TracksView from "@/components/molecules/TracksView.vue";
 
@@ -33,6 +33,7 @@ watch(
 onMounted(() => {
   fetcher();
 })
+
 
 </script>
 

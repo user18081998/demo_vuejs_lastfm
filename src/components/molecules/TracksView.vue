@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import TrackView from "@/components/molecules/TrackView.vue";
-import type {Track} from "@/types/types";
+import type {Track} from "@/models/types";
 import {watch} from "vue";
 
 const props = defineProps<{

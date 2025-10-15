@@ -2,7 +2,10 @@
 import LastFmScrobbles from './organisms/LastFmScrobbles.vue';
 import LastFmHeading from "@/components/organisms/LastFmHeading.vue";
 import { ref } from 'vue'
-
+// const SpotifyPlayground = defineAsyncComponent(() =>
+//   import("@/components/organisms/SpotifyPlayground.vue")
+// )
+import SpotifyPlayground from "@/components/organisms/SpotifyPlayground.vue";
 const username=ref<string>('proxyamg');
 
 function setUsername(newUsername: string) :void {
@@ -35,12 +38,7 @@ function setUsername(newUsername: string) :void {
 
       <!-- Right Sidebar -->
       <aside class="w-1/5">
-        <UCard>
-          <template #header>Right Sidebar</template>
-          <p class="text-gray-600">
-            Additional info or widgets.
-          </p>
-        </UCard>
+        <SpotifyPlayground/>
       </aside>
     </UContainer>
 </template>
