@@ -19,13 +19,8 @@ function setUsername(newUsername: string) :void {
     <UContainer class="flex gap-4 min-h-screen py-4">
       <!-- Left Sidebar -->
       <aside class="w-1/3">
-        <UCard>
-          <LastFmScrobbles
-            :username="username"
-          />
-        </UCard>
+        <SpotifyPlayground/>
       </aside>
-
       <!-- Main Content -->
       <main class="flex-1">
         <UCard>
@@ -37,8 +32,12 @@ function setUsername(newUsername: string) :void {
       </main>
 
       <!-- Right Sidebar -->
-      <aside class="w-1/5">
-        <SpotifyPlayground/>
+      <aside class="w-1/3">
+        <UCard>
+          <LastFmScrobbles
+            :username="username"
+          />
+        </UCard>
       </aside>
     </UContainer>
 </template>

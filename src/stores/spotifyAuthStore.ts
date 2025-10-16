@@ -43,7 +43,7 @@ export const useSpotifyTokenStore =
 
     async function fetchUserPlaylists() {
       const fetchedPlaylists = await spotifyFetchPlaylists(accessToken.value??"");
-      playlists.value.push(...fetchedPlaylists);
+      playlists.value=fetchedPlaylists;
       console.log("[spotify] Playlists found.", fetchedPlaylists);
 
     }
@@ -60,7 +60,7 @@ export const useSpotifyTokenStore =
 
     return {
       // properties
-      accessToken, user, verifier, urlToAuth,
+      accessToken, user, verifier, urlToAuth, playlists,
       // private
       makeUrl, fetchUserProfile, fetchUserPlaylists,
       // public
