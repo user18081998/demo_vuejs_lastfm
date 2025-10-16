@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import {computed, ref} from 'vue'
+import {computed, reactive, ref} from 'vue'
 import {
   getAccessToken, spotifyFetchPlaylists, spotifyFetchProfile,
   urlForPermissions
@@ -14,7 +14,7 @@ export const useSpotifyTokenStore =
     const urlToAuth = ref<string | null>(null);
 
     const user = ref<SpotifyUser|null>(null);
-    const playlists = ref<SpotifyPlaylist[]>([]);
+    const playlists = reactive<SpotifyPlaylist[]>([]);
 
     async function makeUrl() {
       console.log("[spotify-store] making url")
@@ -43,8 +43,11 @@ export const useSpotifyTokenStore =
 
     async function fetchUserPlaylists() {
       const fetchedPlaylists = await spotifyFetchPlaylists(accessToken.value??"");
-      playlists.value=fetchedPlaylists;
-      console.log("[spotify] Playlists found.", fetchedPlaylists);
+      fetchedPlaylists.sort((a,b) => a.id.localeCompare(b.id));
+      playlists.splice(0, playlists.length);
+      playlists.push(...fetchedPlaylists);
+      // limit to 10 playlists
+      console.log("[spotify] Playlists count ", playlists.length);
 
     }
 

@@ -69,12 +69,13 @@ export async function getAccessToken(code: string, verifier: string): Promise<st
 }
 
 export async function spotifyFetchPlaylists(token: string) : Promise<SpotifyPlaylist[]> {
-  return fetch("https://api.spotify.com/v1/me/playlists", {
-      method: "GET", headers: { Authorization: `Bearer ${token}` }
+  return fetch("https://api.spotify.com/v1/me/playlists?limit=50&offset=0", {
+      method: "GET",
+      headers: { Authorization: `Bearer ${token}` },
     })
     .then(res => res.json())
     .then(res => res.items)
-    .then(items => items.map((item : any)=>spotifyPlaylistMapper(item)));
+    .then(items => items.map((item : any)=>spotifyPlaylistMapper(item)))
 }
 
 export async function spotifyFetchProfile(token: string) : Promise<SpotifyUser> {

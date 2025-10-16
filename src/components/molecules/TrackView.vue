@@ -15,7 +15,7 @@ defineProps<{
         <div>
           <h3 style="margin:0; color:white;">{{ track.name }}</h3>
           <div style="font-size:0.95rem;color:antiquewhite"><em>{{ track.artist }}</em> — <em>{{ track.album }}</em></div>
-          <div style="font-size:0.85rem;color:#777;margin-top:6px">{{ track.date }}</div>
+          <div style="font-size:0.85rem;color:#777;margin-top:6px">{{ track.date ?? "Now Playing" }}</div>
         </div>
       </article>
   </li>

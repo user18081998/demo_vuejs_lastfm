@@ -40,10 +40,10 @@ const playlistPaths: Record<keyof SpotifyPlaylist, string> = {
   image: "$.images[0].url",
   name: "$.name",
   tracksUrl: "$.tracks.href",
-  tracksCount: "$.tracks.total",
+  tracksCount: "$.tracks.total"
 }
 
-export async function spotifyPlaylistMapper(json: any): Promise<SpotifyPlaylist> {
+export function spotifyPlaylistMapper(json: any): SpotifyPlaylist {
   const kv = [];
   for(const [key, jpath] of Object.entries(playlistPaths)) {
     const value = JSONPath({path: jpath, json: json})?.[0] ?? null

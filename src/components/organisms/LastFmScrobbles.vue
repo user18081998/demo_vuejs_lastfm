@@ -3,6 +3,7 @@ import {onMounted, reactive, ref, watch} from "vue";
 import type {Track} from "@/models/types.ts";
 import {fetchLastTracks} from "@/business/integrations/lastfm/api.ts";
 import TracksView from "@/components/molecules/TracksView.vue";
+import LastFmHeading from "@/components/organisms/LastFmHeading.vue";
 
 const props = defineProps({
   username: {
@@ -38,7 +39,6 @@ onMounted(() => {
 </script>
 
 <template>
-    <div class="table-header-group">Recent scrobbles</div>
     <div v-if="fetchOk">
       <TracksView :tracks="scrobbles" />
     </div>
