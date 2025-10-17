@@ -32,6 +32,7 @@ export interface SpotifyPlaylist {
   name: string;
   tracksUrl: string;
   tracksCount: number;
+  ownerName: string;
 }
 
 const playlistPaths: Record<keyof SpotifyPlaylist, string> = {
@@ -40,7 +41,8 @@ const playlistPaths: Record<keyof SpotifyPlaylist, string> = {
   image: "$.images[0].url",
   name: "$.name",
   tracksUrl: "$.tracks.href",
-  tracksCount: "$.tracks.total"
+  tracksCount: "$.tracks.total",
+  ownerName: "$.owner.displayName"
 }
 
 export function spotifyPlaylistMapper(json: any): SpotifyPlaylist {

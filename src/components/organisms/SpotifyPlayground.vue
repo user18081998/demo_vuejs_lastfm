@@ -2,6 +2,7 @@
   import {useSpotifyTokenStore} from "@/stores/spotifyAuthStore.ts";
   import {ref, computed, watch, onMounted, onBeforeUnmount, nextTick} from "vue";
   import ImageGrid from "@/components/atoms/ImageGrid.vue";
+  import type {ImageItem} from "@/models/types.ts";
 
   const store = useSpotifyTokenStore();
   const ctxMenuItems = [
@@ -52,7 +53,7 @@
           </UContainer>
         </template>
         <ImageGrid
-          :images="store.playlists.map(p=>new Object({src: p.image}))"
+          :playlists="store.playlists"
           :n="step"
         />
       </UCard>
