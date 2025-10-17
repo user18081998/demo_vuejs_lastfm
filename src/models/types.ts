@@ -9,3 +9,8 @@ interface Track {
 }
 
 export type { Track };
+
+export interface ImageItem {
+  src: string
+  href?: string
+}

@@ -1,15 +1,8 @@
 <script lang="ts" setup>
-import PlaygroundView from "@/components/PlaygroundView.vue";
 </script>
-
-<!--<template>-->
-<!--  <main>-->
-<!--    <LandingPage/>-->
-<!--  </main>-->
-<!--</template>-->
 <template>
   <UApp>
-    <PlaygroundView/>
+    <RouterView />
   </UApp>
 </template>
 
@@ -27,7 +20,6 @@ header {
   header {
     display: flex;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
   }
 
   .logo {

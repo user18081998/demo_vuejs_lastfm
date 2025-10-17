@@ -34,4 +34,5 @@ function submitUsername() {
   if (!username.value.trim()) return;
   emit('submit', username.value)
 }
+
 </script>
