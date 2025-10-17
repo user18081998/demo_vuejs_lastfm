@@ -41,31 +41,14 @@ const gridWithCoords = computed(() =>
       </div>
 
       <template #content>
-        <UCard>
-          <template #header>
-            <Placeholder class="h-8" />
-            <h3><em>{{playlistItem.name}}</em></h3>
-          </template>
-
-          <Placeholder class="h-32" />
-          <div><em> by {{ playlistItem.ownerName }} </em></div>
-          <div><em> Has {{ playlistItem.tracksCount ?? 0 }} tracks</em></div>
-          <template #footer>
-            <Placeholder class="h-8" />
-          </template>
-        </UCard>
-<!--          <article class="track-card" style="display:flex;gap:12px;align-items:center">-->
-<!--            <h3 style="margin:0; color:black;">{{ playlistItem.name }}</h3>-->
-<!--            <br>-->
-<!--              <em>-->
-<!--                <a :href="playlistItem.url" target="_blank" rel="noopener" style="display:inline-block;margin-top:8px">-->
-<!--                  spotify-->
-<!--                </a>-->
-<!--            </em>-->
-<!--            <div>-->
-<!--              <div style="font-size:0.95rem;color:antiquewhite"><em> Has {{ playlistItem.tracksCount ?? 0 }} tracks</em></div>-->
-<!--            </div>-->
-<!--          </article>-->
+        <iframe
+          data-testid="embed-iframe"
+          style="border-radius:12px"
+          :src="`https://open.spotify.com/embed/playlist/${playlistItem.id}?utm_source=generator`"
+          width="100%" height="352" frameBorder="0"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
       </template>
     </UPopover>
   </div>

@@ -4,7 +4,7 @@ import {
   spotifyPlaylistMapper
 } from "@/models/SpotifyModels.ts";
 import {spotifyUserMapper} from "@/models/SpotifyModels.ts";
-const REDIRECT_URL = "http://127.0.0.1:5173/spotify_auth";
+const REDIRECT_URL = "https://127.0.0.1:5173/spotify_auth";
 const clientId = import.meta.env.VITE_SPOTIFY_CLIENT_ID
 const scopes = [
   'user-read-private',
