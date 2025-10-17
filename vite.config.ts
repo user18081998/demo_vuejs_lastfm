@@ -20,7 +20,6 @@ export default defineConfig({
     },
   },
   server: {
-    https: true, // automatic HTTPS
     host: 'localhost',
     port: 5173,
   },
